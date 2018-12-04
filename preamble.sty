@@ -1,0 +1,26 @@
+\RequirePackage{subcaption}
+\RequirePackage{hyperref}
+\RequirePackage{graphicx}
+
+\RequirePackage{todonotes}
+
+\RequirePackage{dsfont}
+
+\RequirePackage{abbreviations}
+
+
+
+%% Margin remarks
+
+\long\def\remark#1{% for notes in the margin -- from Norman Ramsey
+    \ifvmode\else
+        \unskip\raisebox{-4.5pt}[0pt][0pt]{\rlap{$\scriptstyle\diamond$}}%
+    \fi
+    \setlength\marginparwidth{1.5cm}
+    \marginpar{\raggedright\hbadness=10000
+    \parindent=8pt \parskip=2pt
+    \def\baselinestretch{0.8}\tiny
+    \itshape\noindent #1\par}}
+
+%% Uncomment this to remove all remarks
+% \def\remark#1{\relax\ifhmode\unskip\fi} 
