@@ -1,17 +1,17 @@
 \RequirePackage{subcaption}
 \RequirePackage{hyperref}
 \RequirePackage{graphicx}
-
 \RequirePackage{todonotes}
-
 \RequirePackage{dsfont}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
 
 \RequirePackage{latex-preamble/abbreviations}
 
+\RequirePackage{commath}
+\renewcommand{\d}{\dif}
 
-
-%% Margin remarks
-
+%%% Margin remarks
 \long\def\remark#1{% for notes in the margin -- from Norman Ramsey
     \ifvmode\else
         \unskip\raisebox{-4.5pt}[0pt][0pt]{\rlap{$\scriptstyle\diamond$}}%
